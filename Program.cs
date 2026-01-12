@@ -1,6 +1,11 @@
 ﻿//*****************************************************************************
 //** 3195. Find the Minimum Area to Cover All Ones I                leetcode **
 //*****************************************************************************
+//** Carefully Outlining Vertical Edges Resolves
+//** Observing all ones, we mark the furthest rows and columns they reach.
+//** Nothing beyond those bounds counts, just the tightest corners that remain.
+//** Exact area appears as height times width, the minimum space to enclose them all.
+//*****************************************************************************
 
 int minimumArea(int** grid, int gridSize, int* gridColSize) {
     int minRow = INT_MAX, maxRow = INT_MIN;
